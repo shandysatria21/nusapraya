@@ -325,10 +325,10 @@ h1, h2, h3, h4 {
 /* Styling untuk gambar produk */
 .product-img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: 250px;
+  object-fit: cover; 
+  object-position: center; /* <--- INI BIAR FOKUS KE TENGAH */
   border-bottom: 1px solid rgba(0,0,0,0.05);
-  margin-bottom: 20px;
 }
 
 /* Jarak teks di dalam card */
