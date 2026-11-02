@@ -298,51 +298,53 @@ h1, h2, h3, h4 {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 40px; /* Jarak antar kotak dilebarin dikit */
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .product-card {
-  background-color: var(--bg-light);
-  border-left: 3px solid var(--accent-gold);
-  transition: all 0.3s ease;
+  background-color: white; /* Kotak selalu putih bersih */
+  border-radius: 12px; /* Bikin sudut agak melengkung, lebih modern */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Bayangan halus */
+  transition: all 0.4s ease;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-}
-
-.alternate-bg .product-card {
-  background-color: #f7f6f2;
+  border: 1px solid rgba(0,0,0,0.03); /* Border tipis banget biar tegas */
 }
 
 .product-card:hover {
-  background-color: white;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(20, 60, 43, 0.15); /* Bayangan hijau elegan pas di-hover */
+  transform: translateY(-8px); /* Naik lebih tinggi dikit */
 }
 
 /* Styling untuk gambar produk */
 .product-img {
   width: 100%;
-  height: 250px;
-  object-fit: cover; 
-  object-position: center; /* <--- INI BIAR FOKUS KE TENGAH */
+  height: 250px; /* Gambar dibikin lebih jangkung/gede */
+  object-fit: contain; /* INI KUNCINYA: Biar gambar utuh ga kepotong */
+  background-color: #f8f8f8; /* Kasih background abu muda buat gambar yg transparan */
+  padding: 20px; /* Kasih jarak biar produk ga mentok pinggir */
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
 /* Jarak teks di dalam card */
 .product-card h3 {
   font-size: 1.4rem;
+  margin-top: 25px;
   margin-bottom: 10px;
   color: var(--primary-green);
   padding: 0 30px;
+  text-align: center; /* Teks judul jadi di tengah */
 }
 
 .product-card p {
   color: var(--text-light);
   font-size: 0.95rem;
   padding: 0 30px 30px 30px;
+  text-align: center; /* Teks deskripsi di tengah */
+  flex-grow: 1; /* Biar kotak tetap sejajar walau teksnya beda panjang */
 }
 
 /* ================= FOOTER ================= */
