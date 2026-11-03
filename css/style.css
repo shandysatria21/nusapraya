@@ -733,3 +733,23 @@ footer {
 .btn-wa-modal:hover {
   background-color: #128C7E; /* Hijau agak gelap pas di-hover */
 }
+
+.floating-wa {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  z-index: 9999;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+.floating-wa:hover {
+  transform: scale(1.1);
+  background-color: #128C7E;
+}
