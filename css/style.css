@@ -375,3 +375,80 @@ footer p {
   .categories { padding: 60px 5%; }
   .product-section { padding: 60px 5%; }
 } 
+
+/* ================= CONTACT PAGE ================= */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh; /* Biar tingginya pas di layar */
+}
+
+.contact-info {
+  flex: 1;
+  padding: 80px 8%;
+  background-color: var(--bg-light);
+  min-width: 350px;
+}
+
+.contact-map {
+  flex: 1;
+  min-width: 350px;
+  min-height: 500px;
+}
+
+.section-title-left {
+  font-size: 2.8rem;
+  color: var(--primary-green);
+  margin-bottom: 10px;
+}
+
+.divider-left {
+  height: 2px;
+  width: 60px;
+  background-color: var(--accent-gold);
+  margin-bottom: 30px;
+}
+
+.contact-desc {
+  color: var(--text-light);
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.info-block {
+  margin-bottom: 30px;
+}
+
+.info-block h4 {
+  color: var(--primary-green);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.info-block p {
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.info-block a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.info-block a:hover {
+  color: var(--accent-gold);
+}
+
+/* Responsive buat HP */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-info {
+    padding: 60px 5%;
+  }
+  .contact-map {
+    min-height: 400px;
+  }
+}
