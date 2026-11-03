@@ -348,21 +348,76 @@ h1, h2, h3, h4 {
 }
 
 /* ================= FOOTER ================= */
+/* ================= FOOTER BARU ================= */
 footer {
-  background-color: #0d261a;
-  padding: 40px;
-  text-align: center;
-}
-
-.footer-content .logo {
+  background-color: #0d261a; /* Hijau super gelap */
+  padding: 80px 8% 20px 8%;
   color: white;
-  margin-bottom: 15px;
 }
 
-footer p {
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 50px;
+}
+
+.footer-col h4 {
+  color: var(--accent-gold);
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.footer-desc {
+  color: #a0b0a8;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-top: 20px;
+  max-width: 350px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+  color: #a0b0a8;
+  font-size: 0.95rem;
+}
+
+.footer-links a {
+  color: #a0b0a8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-gold); /* Berubah emas pas di-hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.footer-bottom p {
   color: #88a395;
   font-size: 0.85rem;
-  font-weight: 300;
+}
+
+/* Responsive buat HP */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 /* ================= RESPONSIVE ================= */
