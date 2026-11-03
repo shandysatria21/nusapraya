@@ -457,3 +457,129 @@ footer p {
   height: 80px; /* Sesuaikan tingginya biar pas di navbar */
   width: auto;
 }
+
+/* ================= ABOUT PAGE ================= */
+.about-hero {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(20, 60, 43, 0.85), rgba(20, 60, 43, 0.85)), url('https://images.unsplash.com/photo-1587304956236-7b4204082845?q=80&w=1920&auto=format&fit=crop') center/cover;
+  color: white;
+  padding: 0 20px;
+}
+
+.about-section {
+  padding: 100px 8%;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+/* Vision & Mission */
+.vm-section {
+  padding: 100px 8%;
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.vm-card {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  border-top: 4px solid var(--accent-gold);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.vm-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.vm-card p {
+  color: var(--text-light);
+}
+
+/* Legalitas */
+.legal-section {
+  padding: 100px 8%;
+  background-color: var(--primary-green);
+  color: white;
+}
+
+.legal-section .section-title h2 {
+  color: white;
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.legal-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.legal-card h3 {
+  color: var(--accent-gold);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.legal-card p {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.legal-number {
+  margin-top: 15px;
+  font-family: monospace;
+  font-size: 1.1rem !important;
+  color: white !important;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-grid, .vm-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-section, .vm-section, .legal-section {
+    padding: 60px 5%;
+  }
+}
