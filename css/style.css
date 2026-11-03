@@ -452,3 +452,8 @@ footer p {
     min-height: 400px;
   }
 }
+
+.nav-logo {
+  height: 45px; /* Sesuaikan tingginya biar pas di navbar */
+  width: auto;
+}
