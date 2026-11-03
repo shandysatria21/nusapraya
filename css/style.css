@@ -660,3 +660,21 @@ footer p {
     padding: 60px 5%;
   }
 }
+
+/* Tombol WhatsApp di Halaman Detail */
+.btn-wa-modal {
+  display: block;
+  text-align: center;
+  background-color: #25D366; /* Warna hijau khas WhatsApp */
+  color: white !important; /* Biar teksnya putih, bukan biru link */
+  padding: 15px;
+  text-decoration: none; /* Hilangin garis bawah */
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  max-width: 300px;
+}
+
+.btn-wa-modal:hover {
+  background-color: #128C7E; /* Hijau agak gelap pas di-hover */
+}
