@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | NusaPraya Export</title>
+  <link rel="icon" type="image/png" href="img/logo no bg.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/logo no bg.png" alt="NusaPraya Logo" class="nav-logo">
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- CONTAINER DETAIL PRODUK -->
+  <section class="detail-section">
+    <div class="detail-grid">
+      
+      <!-- Kiri: Gambar -->
+      <div class="detail-image">
+        <img id="detail-img" src="" alt="Product Image">
+      </div>
+
+      <!-- Kanan: Info & Tabel Spesifikasi -->
+      <div class="detail-info">
+        <h1 id="detail-title">Loading...</h1>
+        <div class="divider-left"></div>
+        <p id="detail-desc" class="detail-desc">Loading description...</p>
+        
+        <h3 class="spec-heading">Specifications</h3>
+        <table class="spec-table" id="detail-specs">
+          <!-- Tabel bakal diisi otomatis sama Javascript -->
+        </table>
+
+        <a href="#" id="wa-link" target="_blank" class="btn-wa-modal" style="display:inline-block; margin-top:20px; padding:15px 30px;">Inquire via WhatsApp</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="logo">NusaPraya<span>.</span></div>
+      <p>&copy; 2026 NusaPraya Export. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT DATABASE PRODUK -->
+  <script>
+    const productsData = {
+      "csc": {
+        title: "Coconut Shell Charcoal",
+        img: "img/csc.png",
+        desc: "High-carbon charcoal from selected coconut shells. Ideal for BBQ and industrial use. Processed with high-temperature carbonization to ensure long burning time.",
+        specs: { "Moisture": "Max 15%", "Ash Content": "Max 3%", "Fixed Carbon": "Min 75%", "Calorific Value": "7000 - 7500 kcal/kg", "Packaging": "25kg PP Bag UN Certified", "MOQ": "3 x 20ft Container" }
+      },
+      "activated-carbon": {
+        title: "Activated Carbon",
+        img: "img/activated carbon.png",
+        desc: "High adsorption capacity for water and air purification industries. Made from premium coconut shell through steam activation process.",
+        specs: { "Iodine Number": "800 - 1200 mg/g", "Moisture": "Max 5%", "Ash Content": "Max 3%", "Apparent Density": "0.45 - 0.55 g/cm³", "Packaging": "25kg / 50kg Bag", "MOQ": "3 x 20ft Container" }
+      },
+      "briquettes": {
+        title: "Shisha & BBQ Briquettes",
+        img: "img/briquettes.png",
+        desc: "Long-burning, low-smoke briquettes with high calorific value. Perfect for premium shisha lounges and BBQ enthusiasts.",
+        specs: { "Moisture": "Max 5%", "Ash Content": "Max 2.5%", "Burning Time": "2 - 3 Hours", "Shape": "Cube / Hexagonal", "Packaging": "1kg / 10kg Box / Custom", "MOQ": "1 x 20ft Container" }
+      },
+      "raw-coconut-shell": {
+        title: "Raw Coconut Shell",
+        img: "img/raw coconut shell.png",
+        desc: "Premium raw material for charcoal and handicraft industries. Sourced directly from local plantations.",
+        specs: { "Moisture": "Max 12%", "Impurities": "Max 2%", "Size": "Standard / Custom", "Packaging": "Bulk / Jumbo Bag", "MOQ": "3 x 20ft Container" }
+      },
+      "copra": {
+        title: "Copra",
+        img: "img/copra.png",
+        desc: "Dried coconut meat for oil extraction with consistent moisture levels. High oil content, perfect for coconut oil manufacturing.",
+        specs: { "Moisture": "Max 6%", "Oil Content": "Min 65%", "FFA": "Max 1%", "Packaging": "50kg Jute Bag", "MOQ": "3 x 20ft Container" }
+      },
+      "cocopeat": {
+        title: "Cocopeat",
+        img: "img/cocopeat.png",
+        desc: "Natural, eco-friendly growing medium for horticulture and agriculture. Excellent water retention capacity.",
+        specs: { "Moisture": "Max 15%", "pH Level": "5.5 - 6.5", "EC": "< 0.6 mS/cm", "Form": "Block / Loose", "Packaging": "5kg Block / 25kg Bag", "MOQ": "3 x 20ft Container" }
+      },
+      "clove": {
+        title: "Cloves",
+        img: "img/clove.png",
+        desc: "Premium grade cloves with high eugenol content and strong aroma. Sourced from the best plantations in Indonesia.",
+        specs: { "Moisture": "Max 10%", "Eugenol Content": "Min 75%", "Foreign Matter": "Max 1%", "Packaging": "25kg / 50kg Jute Bag", "MOQ": "1 x 20ft Container" }
+      },
+      "nutmeg": {
+        title: "Nutmeg",
+        img: "img/nutmeg.png",
+        desc: "Selected nutmeg, well-dried with strong flavor, ready for export. Strict quality control to prevent pest and mold.",
+        specs: { "Moisture": "Max 10%", "Size": "Grade A / B", "Foreign Matter": "Max 1%", "Packaging": "25kg / 50kg Jute Bag", "MOQ": "1 Ton" }
+      },
+      "mace": {
+        title: "Mace",
+        img: "img/mace.png",
+        desc: "Whole and ground mace with bright color and premium quality. Known for its warm, spicy aroma.",
+        specs: { "Moisture": "Max 12%", "Color": "Bright Red/Orange", "Whole/Rolled": "Available", "Packaging": "25kg Carton Box", "MOQ": "500 kg" }
+      },
+      "tamarind": {
+        title: "Tamarind",
+        img: "img/tamarind.png",
+        desc: "Seedless and with-seed tamarind, offering a perfect sweet-sour taste. Clean and well-processed.",
+        specs: { "Moisture": "Max 15%", "Seedless/With Seed": "Available", "Foreign Matter": "Max 1%", "Packaging": "10kg / 20kg Carton", "MOQ": "1 Ton" }
+      },
+      "cinnamon": {
+        title: "Cinnamon",
+        img: "img/cinnamon.png",
+        desc: "Cassia and Ceylon type cinnamon, well-sorted sticks and powder. Strong sweet woody fragrance.",
+        specs: { "Moisture": "Max 12%", "Type": "Cassia / Ceylon", "Form": "Stick / Powder", "Packaging": "25kg Carton", "MOQ": "1 Ton" }
+      }
+    };
+
+    // Ambil ID dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+
+    // Tampilkan data
+    if (productId && productsData[productId]) {
+      const product = productsData[productId];
+      
+      document.title = product.title + " | NusaPraya Export";
+      document.getElementById('detail-title').innerText = product.title;
+      document.getElementById('detail-img').src = product.img;
+      document.getElementById('detail-desc').innerText = product.desc;
+
+      const specTable = document.getElementById('detail-specs');
+      for (const [key, value] of Object.entries(product.specs)) {
+        specTable.innerHTML += `<tr><td>${key}</td><td>: ${value}</td></tr>`;
+      }
+
+      const waText = encodeURIComponent(`Hi NusaPraya, I am interested in ${product.title}. Could you send me the quotation?`);
+      document.getElementById('wa-link').href = `https://wa.me/6285190610049?text=${waText}`;
+
+    } else {
+      document.getElementById('detail-title').innerText = "Product Not Found";
+      document.getElementById('detail-desc').innerText = "Sorry, the product you are looking for does not exist.";
+      document.getElementById('detail-img').style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
