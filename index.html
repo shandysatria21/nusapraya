@@ -3,27 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nusapraya | Premium Coconut & Spices</title>
+  <title>Nusapraya | Premium Coconut & Spices Exporter from Indonesia</title>
   <meta name="description" content="Nusapraya - Trusted Indonesian exporter of premium Coconut Derivatives (Charcoal, Briquettes, Activated Carbon) and Spices (Cloves, Nutmeg, Cinnamon).">
-  <!-- Open Graph / Social Media -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.nusapraya.com/">
+
+  <!-- Open Graph -->
   <meta property="og:title" content="Nusapraya | Premium Coconut & Spices">
   <meta property="og:description" content="Trusted Indonesian exporter of premium coconut derivatives and authentic spices.">
-  <meta property="og:image" content="img/logo no bg.png"> <!-- Ganti dengan gambar banner lo -->
+  <meta property="og:image" content="https://www.nusapraya.com/img/logo%20no%20bg.png">
   <meta property="og:url" content="https://www.nusapraya.com">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nusapraya">
   <link rel="icon" type="image/png" href="img/logo no bg.png">
-  <!-- Font Elegan dari Google Fonts -->
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PT. Nusantara Parahyangan Abadi",
+    "alternateName": "Nusapraya",
+    "url": "https://www.nusapraya.com",
+    "logo": "https://www.nusapraya.com/img/logo%20no%20bg.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+62-859-2210-0245",
+      "contactType": "sales",
+      "areaServed": "Worldwide",
+      "availableLanguage": ["English", "Indonesian"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Cihampelas No.201A, Cipaganti",
+      "addressLocality": "Bandung",
+      "addressRegion": "West Java",
+      "postalCode": "40131",
+      "addressCountry": "ID"
+    }
+  }
+  </script>
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">
-      <img src="img/logo no bg.png" alt="Nusapraya" class="nav-logo">
+      <a href="index.html" aria-label="Nusapraya Home">
+        <img src="img/logo no bg.png" alt="Nusapraya Logo" class="nav-logo">
+      </a>
     </div>
-    <nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="products.html">Products</a>
@@ -31,7 +66,6 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-content">
       <span class="badge">Trusted Indonesian Exporter</span>
@@ -41,25 +75,22 @@
     </div>
   </section>
 
-  <!-- KATEGORI (Cards) -->
   <section class="categories">
     <div class="section-title">
       <h2>Our Core Commodities</h2>
       <div class="divider"></div>
     </div>
-    
     <div class="category-grid">
       <div class="category-card">
-        <div class="card-image coconut-bg"></div>
+        <div class="card-image coconut-bg" role="img" aria-label="Coconut derivatives"></div>
         <div class="card-content">
           <h3>Coconut Derivatives</h3>
           <p>From high-grade coconut shell charcoal and activated carbon to premium shisha briquettes, copra, and cocopeat.</p>
           <a href="products.html#coconut" class="link-arrow">View Products &rarr;</a>
         </div>
       </div>
-
       <div class="category-card">
-        <div class="card-image spices-bg"></div>
+        <div class="card-image spices-bg" role="img" aria-label="Premium spices"></div>
         <div class="card-content">
           <h3>Premium Spices</h3>
           <p>Sourcing the finest cloves, nutmeg, mace, tamarind, and cinnamon with strict quality control for international standards.</p>
@@ -69,7 +100,6 @@
     </div>
   </section>
 
-  <!-- WHY US -->
   <section class="why" id="why">
     <div class="section-title text-white">
       <h2>Nusapraya Advantage</h2>
@@ -95,26 +125,20 @@
     </div>
   </section>
 
-  <!-- CONTACT CTA -->
   <section class="contact-cta" id="contact">
     <h2>Ready to Discuss Your Needs?</h2>
     <p>Contact our export team today for quotations and product specifications.</p>
-    <a href="https://wa.me/6285922100245" class="btn-dark" target="_blank">Contact via WhatsApp</a>
+    <a href="https://wa.me/6285922100245?text=Halo%20Nusapraya,%20saya%20mau%20bertanya%20mengenai%20produk." class="btn-dark" target="_blank" rel="noopener">Contact via WhatsApp</a>
   </section>
 
-  <!-- FOOTER BARU -->
   <footer>
     <div class="footer-container">
-      
-      <!-- Kolom 1: Logo & Deskripsi -->
       <div class="footer-col">
         <div class="footer-logo">
-          <img src="img/logo no bg.png" alt="Nusapraya" class="nav-logo" style="filter: brightness(0) invert(1);"> <!-- Filter biar logo jadi putih -->
+          <img src="img/logo no bg.png" alt="Nusapraya Logo" class="nav-logo" style="filter: brightness(0) invert(1);">
         </div>
         <p class="footer-desc">Trusted Indonesian exporter of premium coconut derivatives and authentic spices, delivering nature's finest to the global market.</p>
       </div>
-
-      <!-- Kolom 2: Quick Links -->
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul class="footer-links">
@@ -124,8 +148,6 @@
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
-
-      <!-- Kolom 3: Kontak -->
       <div class="footer-col">
         <h4>Contact Info</h4>
         <ul class="footer-links">
@@ -134,18 +156,24 @@
           <li>✉️ <a href="mailto:info@nusapraya.com">info@nusapraya.com</a></li>
         </ul>
       </div>
-
     </div>
-
-    <!-- Copyright -->
     <div class="footer-bottom">
       <p>&copy; 2026 PT. Nusantara Parahyangan Abadi. All rights reserved.</p>
     </div>
   </footer>
 
-<a href="https://wa.me/6285922100245?text=Halo%20NusaPraya,%20saya%20mau%20bertanya%20mengenai%20produk." class="floating-wa" target="_blank">
-  <svg viewBox="0 0 32 32" width="30" height="30" fill="white"><path d="M16 2a13 13 0 0 0-11.2 19.5L3 29l7.7-2a13 13 0 1 0 5.3-25zm0 23.8a10.8 10.8 0 0 1-5.5-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4A10.8 10.8 0 1 1 16 25.8zm6-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-1.9-.9-3.1-1.6-4.4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3 1.8.8 2.5.9 3.4.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.4z"/></svg>
-</a>
+  <a href="https://wa.me/6285922100245?text=Halo%20Nusapraya,%20saya%20mau%20bertanya%20mengenai%20produk." class="floating-wa" target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="white"><path d="M16 2a13 13 0 0 0-11.2 19.5L3 29l7.7-2a13 13 0 1 0 5.3-25zm0 23.8a10.8 10.8 0 0 1-5.5-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4A10.8 10.8 0 1 1 16 25.8zm6-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-1.9-.9-3.1-1.6-4.4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3 1.8.8 2.5.9 3.4.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.4z"/></svg>
+  </a>
 
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggle.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+    });
+  </script>
 </body>
 </html>

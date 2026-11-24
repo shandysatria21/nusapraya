@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products | Nusapraya</title>
+  <title>Products | Nusapraya - Premium Coconut & Spices Catalogue</title>
   <meta name="description" content="Explore our premium product catalogue: Indonesian Coconut Shell Charcoal, Shisha Briquettes, Activated Carbon, Cloves, Nutmeg, and Cinnamon. Export quality.">
-  <link rel="icon" type="image/png" href="img/logo no bg.png">
-  <!-- SEO Dasar -->
-  <meta name="description" content="Nusapraya - Trusted Indonesian exporter of premium Coconut Derivatives (Charcoal, Briquettes, Activated Carbon) and Spices (Cloves, Nutmeg, Cinnamon).">
   <meta name="keywords" content="Indonesian Coconut Charcoal, Shisha Briquettes Exporter, Activated Carbon, Cloves Supplier, Nutmeg Export, Copra, Cocopeat, Cinnamon Indonesia">
-  
+  <link rel="icon" type="image/png" href="img/logo no bg.png">
+  <link rel="canonical" href="https://www.nusapraya.com/products.html">
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,143 +16,116 @@
 
   <header class="navbar">
     <div class="logo">
-      <img src="img/logo no bg.png" alt="NusaPraya Logo" class="nav-logo">
+      <a href="index.html" aria-label="Nusapraya Home">
+        <img src="img/logo no bg.png" alt="Nusapraya Logo" class="nav-logo">
+      </a>
     </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- COCONUT SECTION -->
   <section class="product-section" id="coconut">
     <div class="section-title">
       <h2>Coconut Derivatives</h2>
       <div class="divider"></div>
       <p>High-quality downstream products from selected Indonesian coconuts.</p>
     </div>
-    
     <div class="product-grid">
-      
-      <!-- Produk 1 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/csc.png" alt="Coconut Shell Charcoal" class="product-img">
+      <div class="product-card">
+        <img src="img/csc.png" alt="Coconut Shell Charcoal" class="product-img" loading="lazy" width="300" height="250">
         <h3>Coconut Shell Charcoal</h3>
         <p>High-carbon charcoal from selected coconut shells. Ideal for BBQ and industrial use.</p>
         <a href="product-detail.html?id=csc" class="btn-detail">View Full Specs</a>
       </div>
-
-      <!-- Produk 2 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/activated carbon.png" alt="Activated Carbon" class="product-img">
+      <div class="product-card">
+        <img src="img/activated carbon.png" alt="Activated Carbon" class="product-img" loading="lazy" width="300" height="250">
         <h3>Activated Carbon</h3>
         <p>High adsorption capacity for water and air purification industries.</p>
         <a href="product-detail.html?id=activated-carbon" class="btn-detail">View Full Specs</a>
       </div>
-
-      <!-- Produk 3 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/briquettes.png" alt="Shisha and BBQ Briquettes" class="product-img">
+      <div class="product-card">
+        <img src="img/briquettes.png" alt="Shisha and BBQ Briquettes" class="product-img" loading="lazy" width="300" height="250">
         <h3>Shisha & BBQ Briquettes</h3>
         <p>Long-burning, low-smoke briquettes with high calorific value.</p>
         <a href="product-detail.html?id=briquettes" class="btn-detail">View Full Specs</a>
       </div>
-
-      <!-- Produk 4 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/raw coconut shell.png" alt="Raw Coconut Shell" class="product-img">
+      <div class="product-card">
+        <img src="img/raw coconut shell.png" alt="Raw Coconut Shell" class="product-img" loading="lazy" width="300" height="250">
         <h3>Raw Coconut Shell</h3>
         <p>Premium raw material for charcoal and handicraft industries.</p>
         <a href="product-detail.html?id=raw-coconut-shell" class="btn-detail">View Full Specs</a>
       </div>
-
-      <!-- Produk 5 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/copra.png" alt="Copra" class="product-img">
+      <div class="product-card">
+        <img src="img/copra.png" alt="Copra" class="product-img" loading="lazy" width="300" height="250">
         <h3>Copra</h3>
         <p>Dried coconut meat for oil extraction with consistent moisture levels.</p>
         <a href="product-detail.html?id=copra" class="btn-detail">View Full Specs</a>
       </div>
-
-      <!-- Produk 6 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/cocopeat.png" alt="Cocopeat" class="product-img">
+      <div class="product-card">
+        <img src="img/cocopeat.png" alt="Cocopeat" class="product-img" loading="lazy" width="300" height="250">
         <h3>Cocopeat</h3>
         <p>Natural, eco-friendly growing medium for horticulture and agriculture.</p>
         <a href="product-detail.html?id=cocopeat" class="btn-detail">View Full Specs</a>
       </div>
-
     </div>
   </section>
 
-  <!-- SPICES SECTION -->
   <section class="product-section alternate-bg" id="spices">
     <div class="section-title">
       <h2>Premium Spices</h2>
       <div class="divider"></div>
       <p>Authentic Indonesian spices, carefully harvested and processed.</p>
     </div>
-    
     <div class="product-grid">
-      
-      <!-- Produk 1 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/clove.png" alt="Cloves" class="product-img">
+      <div class="product-card">
+        <img src="img/clove.png" alt="Cloves" class="product-img" loading="lazy" width="300" height="250">
         <h3>Cloves</h3>
         <p>Premium grade cloves with high eugenol content and strong aroma.</p>
         <a href="product-detail.html?id=clove" class="btn-detail">View Full Specs</a>
       </div>
-
-      <!-- Produk 2 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/nutmeg.png" alt="Nutmeg" class="product-img">
+      <div class="product-card">
+        <img src="img/nutmeg.png" alt="Nutmeg" class="product-img" loading="lazy" width="300" height="250">
         <h3>Nutmeg</h3>
         <p>Selected nutmeg, well-dried with strong flavor, ready for export.</p>
         <a href="product-detail.html?id=nutmeg" class="btn-detail">View Full Specs</a>
       </div>
-
-      <!-- Produk 3 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/mace.png" alt="Mace" class="product-img">
+      <div class="product-card">
+        <img src="img/mace.png" alt="Mace" class="product-img" loading="lazy" width="300" height="250">
         <h3>Mace</h3>
         <p>Whole and ground mace with bright color and premium quality.</p>
         <a href="product-detail.html?id=mace" class="btn-detail">View Full Specs</a>
       </div>
-
-      <!-- Produk 4 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/tamarind.png" alt="Tamarind" class="product-img">
+      <div class="product-card">
+        <img src="img/tamarind.png" alt="Tamarind" class="product-img" loading="lazy" width="300" height="250">
         <h3>Tamarind</h3>
         <p>Seedless and with-seed tamarind, offering a perfect sweet-sour taste.</p>
         <a href="product-detail.html?id=tamarind" class="btn-detail">View Full Specs</a>
       </div>
-
-      <!-- Produk 5 -->
-      <div class="product-card" data-aos="fade-up">
-        <img src="img/cinnamon.png" alt="Cinnamon" class="product-img">
+      <div class="product-card">
+        <img src="img/cinnamon.png" alt="Cinnamon" class="product-img" loading="lazy" width="300" height="250">
         <h3>Cinnamon</h3>
         <p>Cassia and Ceylon type cinnamon, well-sorted sticks and powder.</p>
         <a href="product-detail.html?id=cinnamon" class="btn-detail">View Full Specs</a>
       </div>
-
     </div>
   </section>
 
-    <!-- FOOTER BARU -->
   <footer>
     <div class="footer-container">
-      
-      <!-- Kolom 1: Logo & Deskripsi -->
       <div class="footer-col">
         <div class="footer-logo">
-          <img src="img/logo no bg.png" alt="Nusapraya class="nav-logo" style="filter: brightness(0) invert(1);"> <!-- Filter biar logo jadi putih -->
+          <!-- BUG FIXED: quote alt sebelumnya rusak -->
+          <img src="img/logo no bg.png" alt="Nusapraya Logo" class="nav-logo" style="filter: brightness(0) invert(1);">
         </div>
         <p class="footer-desc">Trusted Indonesian exporter of premium coconut derivatives and authentic spices, delivering nature's finest to the global market.</p>
       </div>
-
-      <!-- Kolom 2: Quick Links -->
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul class="footer-links">
@@ -163,8 +135,6 @@
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
-
-      <!-- Kolom 3: Kontak -->
       <div class="footer-col">
         <h4>Contact Info</h4>
         <ul class="footer-links">
@@ -173,27 +143,24 @@
           <li>✉️ <a href="mailto:info@nusapraya.com">info@nusapraya.com</a></li>
         </ul>
       </div>
-
     </div>
-
-    <!-- Copyright -->
     <div class="footer-bottom">
       <p>&copy; 2026 PT. Nusantara Parahyangan Abadi. All rights reserved.</p>
     </div>
   </footer>
-  <!-- AOS Animation Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <a href="https://wa.me/6285922100245?text=Halo%20Nusapraya,%20saya%20mau%20bertanya%20mengenai%20produk." class="floating-wa" target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="white"><path d="M16 2a13 13 0 0 0-11.2 19.5L3 29l7.7-2a13 13 0 1 0 5.3-25zm0 23.8a10.8 10.8 0 0 1-5.5-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4A10.8 10.8 0 1 1 16 25.8zm6-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-1.9-.9-3.1-1.6-4.4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3 1.8.8 2.5.9 3.4.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.4z"/></svg>
+  </a>
+
   <script>
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 100
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggle.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
     });
   </script>
-
-<a href="https://wa.me/6285922100245?text=Halo%20NusaPraya,%20saya%20mau%20bertanya%20mengenai%20produk." class="floating-wa" target="_blank">
-  <svg viewBox="0 0 32 32" width="30" height="30" fill="white"><path d="M16 2a13 13 0 0 0-11.2 19.5L3 29l7.7-2a13 13 0 1 0 5.3-25zm0 23.8a10.8 10.8 0 0 1-5.5-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4A10.8 10.8 0 1 1 16 25.8zm6-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-1.9-.9-3.1-1.6-4.4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.2 3.1c.2.2 2 3.1 4.9 4.3 1.8.8 2.5.9 3.4.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.4z"/></svg>
-</a>
-
 </body>
 </html>
